@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+    - name: Install vmware-tools  
+      win_chocolatey:
+        name: vmware-tools
+        state: present
+
